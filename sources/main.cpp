@@ -1,6 +1,6 @@
 //#include <iostream>
 //#include <sstream>
-//#include "sources//Matrix.hpp"
+//#include "Matrix.hpp"
 //
 //using namespace zich;
 //using namespace std;
@@ -14,11 +14,21 @@
 //    Matrix matrix2(v1, 3, 3);
 //   // bool b = matrix2 + <= matrix1 ;
 //
-//   matrix1*=matrix2;
-//    cout << matrix1 <<endl;
+//  // matrix1*=matrix2;
 //
-//        istringstream s{"[2 0 0], [1 0 1], [0 1 0]"};
-//        s >> matrix1 ;
+//
+//    std::vector<double> unit_matrix = {1, 0, 0, 0, 1, 0, 0, 0, 1};
+//    Matrix mat1{unit_matrix,3,3};
+//    std::vector<double> arr1 = {-1, 0, 0, 0, -1, 0, 0, 0, -1};
+//    Matrix mat_un{arr1,3,3};
+//
+//    bool a = -mat1 == mat_un;
+//    cout<< a ;
+////        istringstream s{"[1 0 0]\n[0 1 0]\n[0 0 1]"};
+////        s >> matrix1 ;
+////    ostringstream os1;
+////    os1 << matrix1;
+////    os1.str() == "[1 0 0]\n[0 1 0]\n[0 0 1]");
 //
 //    return 0;
 //}

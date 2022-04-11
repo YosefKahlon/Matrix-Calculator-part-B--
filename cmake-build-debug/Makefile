@@ -123,33 +123,6 @@ Matrix_Calculator_part_B__/fast:
 	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/build
 .PHONY : Matrix_Calculator_part_B__/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 sources/Matrix.o: sources/Matrix.cpp.o
 
 .PHONY : sources/Matrix.o
@@ -177,6 +150,33 @@ sources/Matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.s
 .PHONY : sources/Matrix.cpp.s
 
+sources/main.o: sources/main.cpp.o
+
+.PHONY : sources/main.o
+
+# target to build an object file
+sources/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o
+.PHONY : sources/main.cpp.o
+
+sources/main.i: sources/main.cpp.i
+
+.PHONY : sources/main.i
+
+# target to preprocess a source file
+sources/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.i
+.PHONY : sources/main.cpp.i
+
+sources/main.s: sources/main.cpp.s
+
+.PHONY : sources/main.s
+
+# target to generate assembly for a file
+sources/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.s
+.PHONY : sources/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Matrix_Calculator_part_B__"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... sources/Matrix.o"
 	@echo "... sources/Matrix.i"
 	@echo "... sources/Matrix.s"
+	@echo "... sources/main.o"
+	@echo "... sources/main.i"
+	@echo "... sources/main.s"
 .PHONY : help
 
 

@@ -57,18 +57,18 @@ include CMakeFiles/Matrix_Calculator_part_B__.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Matrix_Calculator_part_B__.dir/flags.make
 
-CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o: CMakeFiles/Matrix_Calculator_part_B__.dir/flags.make
-CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o -c /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/main.cpp
+CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o: CMakeFiles/Matrix_Calculator_part_B__.dir/flags.make
+CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o: ../sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o -c /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/main.cpp
 
-CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/main.cpp > CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.i
+CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/main.cpp > CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.i
 
-CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/main.cpp -o CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.s
+CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/main.cpp -o CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.s
 
 CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o: CMakeFiles/Matrix_Calculator_part_B__.dir/flags.make
 CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o: ../sources/Matrix.cpp
@@ -85,13 +85,13 @@ CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.s: cmake_force
 
 # Object files for target Matrix_Calculator_part_B__
 Matrix_Calculator_part_B___OBJECTS = \
-"CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o" \
+"CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o" \
 "CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o"
 
 # External object files for target Matrix_Calculator_part_B__
 Matrix_Calculator_part_B___EXTERNAL_OBJECTS =
 
-Matrix_Calculator_part_B__: CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o
+Matrix_Calculator_part_B__: CMakeFiles/Matrix_Calculator_part_B__.dir/sources/main.cpp.o
 Matrix_Calculator_part_B__: CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o
 Matrix_Calculator_part_B__: CMakeFiles/Matrix_Calculator_part_B__.dir/build.make
 Matrix_Calculator_part_B__: CMakeFiles/Matrix_Calculator_part_B__.dir/link.txt
