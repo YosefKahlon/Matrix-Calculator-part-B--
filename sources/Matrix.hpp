@@ -16,7 +16,7 @@ namespace zich {
     private:
 
 
-        vector<double> matrix;
+        vector<vector<double>> matrix;
         int row;
         int col;
     public:
@@ -66,7 +66,7 @@ namespace zich {
         friend istream &operator>>(istream &os,  Matrix &matrix1);
 
 
-
+        static double check_sum(const Matrix &matrix);
     };
 
 
