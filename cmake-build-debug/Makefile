@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sources/Matrix.o: sources/Matrix.cpp.o
+
+.PHONY : sources/Matrix.o
+
+# target to build an object file
+sources/Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o
+.PHONY : sources/Matrix.cpp.o
+
+sources/Matrix.i: sources/Matrix.cpp.i
+
+.PHONY : sources/Matrix.i
+
+# target to preprocess a source file
+sources/Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.i
+.PHONY : sources/Matrix.cpp.i
+
+sources/Matrix.s: sources/Matrix.cpp.s
+
+.PHONY : sources/Matrix.s
+
+# target to generate assembly for a file
+sources/Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Matrix_Calculator_part_B__.dir/build.make CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.s
+.PHONY : sources/Matrix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/Matrix.o"
+	@echo "... sources/Matrix.i"
+	@echo "... sources/Matrix.s"
 .PHONY : help
 
 

@@ -87,6 +87,12 @@
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/main.cpp">
 			<Option target="Matrix_Calculator_part_B__"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.cpp">
+			<Option target="Matrix_Calculator_part_B__"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.hpp">
+			<Option target="Matrix_Calculator_part_B__"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

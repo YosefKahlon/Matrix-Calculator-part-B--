@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/main.cpp" "/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/cmake-build-debug/CMakeFiles/Matrix_Calculator_part_B__.dir/main.cpp.o"
+  "/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.cpp" "/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/cmake-build-debug/CMakeFiles/Matrix_Calculator_part_B__.dir/sources/Matrix.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
