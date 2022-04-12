@@ -266,32 +266,16 @@ Matrix &Matrix::operator--() {
 
 //postfix
 Matrix Matrix::operator++(int dummy) {
-
-//    vector<double> new_matrix;
-//    for (size_t i = 0; i < this->row; ++i) {
-//        for (size_t j = 0; j < this->col; ++j) {
-//            new_matrix.push_back(this->matrix.at(i).at(j) + 1);
-//        }
-//    }
-//    return Matrix(new_matrix, this->row, this->col);
-
-    Matrix copy = *this;
+    Matrix matrix = *this;
     ++(*this);
-    return copy;
+    return matrix;
 }
 
 //postfix
 Matrix Matrix::operator--(int dummy) {
-//    vector<double> new_matrix;
-//    for (size_t i = 0; i < this->row; ++i) {
-//        for (size_t j = 0; j < this->col; ++j) {
-//            new_matrix.push_back(this->matrix.at(i).at(j) - 1);
-//        }
-//    }
-//    return Matrix(new_matrix, this->row, this->col);
-    Matrix copy = *this;
+    Matrix matrix = *this;
     --(*this);
-    return copy;
+    return matrix;
 }
 
 ///**------------------operators(<,>,==,!= ,>= , <= )---------------------------*/
@@ -411,8 +395,6 @@ ostream &zich::operator<<(ostream &os, const Matrix &matrix1) {
         if (flag) {
             os << "]";
         }
-
-
     }
 
     return os;
@@ -444,11 +426,10 @@ istream &zich::operator>>(istream &os, Matrix &matrix1) {
     string input;
     getline(os, input);
     string save;
-    vector<vector<double>> t;
-    vector<double> s;
+
     int counter_row = 1;
     int counter_col = 1;
-    bool flag = false;
+               bool flag = false;
     for (size_t i = 0; i < input.size() - 1; ++i) {
 
 

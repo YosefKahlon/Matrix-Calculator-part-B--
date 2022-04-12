@@ -20,3 +20,11 @@ vector
 iostream
 /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/iostream
 
+/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/main.cpp
+iostream
+-
+sstream
+-
+Matrix.hpp
+/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.hpp
+
