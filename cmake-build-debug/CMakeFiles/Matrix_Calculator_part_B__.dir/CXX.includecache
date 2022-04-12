@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.cpp
-Matrix.hpp
-/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.hpp
-vector
-/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/vector
-stdexcept
-/mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/stdexcept
-
 /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/Matrix.hpp
 vector
 /mnt/c/Users/97252/Documents/GitHub/Matrix-Calculator-part-B--/sources/vector

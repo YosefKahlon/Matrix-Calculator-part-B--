@@ -48,7 +48,7 @@ namespace zich {
         Matrix& operator++();
         Matrix& operator--();
 
-
+        //Unary
         Matrix operator-() const;
         Matrix operator+() const;
 

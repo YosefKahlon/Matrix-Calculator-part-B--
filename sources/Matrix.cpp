@@ -11,7 +11,13 @@ using namespace std;
 using namespace zich;
 
 
-//c - tor
+
+/**
+ * constructor
+ * @param matrix = values
+ * @param n  = row
+ * @param m  = column
+ */
 Matrix::Matrix(const std::vector<double> &matrix, int n, int m) {
 
     if (n * m != matrix.size()) {
@@ -20,7 +26,6 @@ Matrix::Matrix(const std::vector<double> &matrix, int n, int m) {
     if (n < 0 || m < 0) {
         throw invalid_argument("m and n  must be positive integers !");
     }
-
 
     vector<vector<double>> new_matrix;
     this->row = n;
@@ -208,6 +213,12 @@ Matrix &Matrix::operator*=(const double &num) {
 
 }
 
+/**
+ *In this method we implement the operator multiply between two matrix
+ * when the column of matrix 1 must be have equal to the row of matrix 2.
+ *
+ * @return pointer of the matrix .
+ */
 Matrix &Matrix::operator*=(const Matrix &other) {
     if (this->col != other.row) {
         throw invalid_argument(" Row  must be equal to  column!");
@@ -243,7 +254,15 @@ Matrix &Matrix::operator*=(const Matrix &other) {
 /**------------------operators( ++,--, postfix and prefix)---------------------------*/
 
 
-//prefix
+
+
+/**
+ *-- prefix --
+ *
+ *In this method we implement the operator ++matrix
+ * the matrix increasing each value by 1 .
+ * @return pointer to matrix.
+ */
 Matrix &Matrix::operator++() {
     for (size_t i = 0; i < this->row; ++i) {
         for (size_t j = 0; j < this->col; ++j) {
@@ -254,7 +273,13 @@ Matrix &Matrix::operator++() {
 }
 
 
-//prefix
+/**
+ *-- prefix --
+ *
+ *In this method we implement the operator --matrix
+ * the matrix decreasing each value by 1 .
+ * @return pointer to matrix.
+ */
 Matrix &Matrix::operator--() {
     for (size_t i = 0; i < this->row; ++i) {
         for (size_t j = 0; j < this->col; ++j) {
@@ -264,23 +289,49 @@ Matrix &Matrix::operator--() {
     return *this;
 }
 
-//postfix
+
+/**
+ *-- postfix --
+ *
+ *In this method we implement the operator ++matrix
+ * the matrix increasing each value by 1 .
+ * @return copy of the matrix after the increasing.
+ */
+
 Matrix Matrix::operator++(int dummy) {
     Matrix matrix = *this;
     ++(*this);
     return matrix;
 }
 
-//postfix
+/**
+ *-- postfix --
+ *
+ *In this method we implement the operator ++matrix
+ * the matrix decreasing each value by 1 .
+ * @return copy of the matrix after the decreasing.
+ */
 Matrix Matrix::operator--(int dummy) {
     Matrix matrix = *this;
     --(*this);
     return matrix;
 }
 
+
+///**------------------operators(unary + , -)---------------------------*/
+
+Matrix Matrix::operator-() const {
+    return -1 * *(this);
+}
+
+
+Matrix Matrix::operator+() const {
+    return *this;
+}
+
+
+
 ///**------------------operators(<,>,==,!= ,>= , <= )---------------------------*/
-
-
 /**
  * @param matrix1
  * @param matrix2
@@ -369,6 +420,10 @@ bool zich::operator<=(const Matrix &matrix1, const Matrix &matrix2) {
 }
 
 
+
+
+
+
 /**
  *
  * @param os - output stream
@@ -400,6 +455,12 @@ ostream &zich::operator<<(ostream &os, const Matrix &matrix1) {
     return os;
 }
 
+
+/**
+ * Static method
+ * @param matrix
+ * @return  The sum of the matrix values
+ */
 double Matrix::check_sum(const Matrix &matrix) {
     double counter = 0;
     for (size_t i = 0; i < matrix.row; ++i) {
@@ -411,16 +472,15 @@ double Matrix::check_sum(const Matrix &matrix) {
 }
 
 
-Matrix Matrix::operator-() const {
-    return -1 * *(this);
-}
 
 
-Matrix Matrix::operator+() const {
-    return *this;
-}
-
-
+/**
+ *
+ * In this method, we go over the string
+ * and we get the matrix values
+ * @param os stream of the input
+ * @param matrix1
+ */
 istream &zich::operator>>(istream &os, Matrix &matrix1) {
 
     string input;
@@ -429,7 +489,7 @@ istream &zich::operator>>(istream &os, Matrix &matrix1) {
 
     int counter_row = 1;
     int counter_col = 1;
-               bool flag = false;
+    bool flag = false;
     for (size_t i = 0; i < input.size() - 1; ++i) {
 
 
@@ -471,6 +531,9 @@ istream &zich::operator>>(istream &os, Matrix &matrix1) {
         }
 
     }
+
+
+
     matrix1.col = counter_col;
     matrix1.row = counter_row;
     vector<vector<double>> new_matrix;
