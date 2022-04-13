@@ -14,8 +14,9 @@ using namespace zich;
 
 /**
  * constructor
+ * from one vector to 2D vector .
  * @param matrix = values
- * @param n  = row
+ * @param n  = row  
  * @param m  = column
  */
 Matrix::Matrix(const std::vector<double> &matrix, int n, int m) {
