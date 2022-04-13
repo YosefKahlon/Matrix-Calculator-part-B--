@@ -16,7 +16,7 @@ using namespace zich;
  * constructor
  * from one vector to 2D vector .
  * @param matrix = values
- * @param n  = row  
+ * @param n  = row
  * @param m  = column
  */
 Matrix::Matrix(const std::vector<double> &matrix, int n, int m) {
@@ -156,7 +156,7 @@ Matrix zich::operator*(const double &num, const Matrix &matrix1) {
 /**
  *In this method, we implement the operator of  +=
  * Matrix increases each value of the matrix by the value of the other matrix index .
- * @return pointer to the matrix .
+ * @return reference of the matrix.
  */
 Matrix &Matrix::operator+=(const Matrix &other) {
     if (this->row != other.row || this->col != other.col) {
@@ -177,7 +177,7 @@ Matrix &Matrix::operator+=(const Matrix &other) {
 /**
  *In this method, we implement the operator of  -=
  * Matrix decreases each value of the matrix by the value of the other matrix index .
- * @return pointer to the matrix .
+ * * @return reference of the matrix.
  */
 Matrix &Matrix::operator-=(const Matrix &other) {
     if (this->row != other.row || this->col != other.col) {
@@ -197,7 +197,7 @@ Matrix &Matrix::operator-=(const Matrix &other) {
 /**
  *In this method, we implement the operator of multiplying a matrix in scalar
  *
- * @return pointer to the matrix .
+ * * @return reference of the matrix.
  */
 Matrix &Matrix::operator*=(const double &num) {
 
@@ -218,7 +218,7 @@ Matrix &Matrix::operator*=(const double &num) {
  *In this method we implement the operator multiply between two matrix
  * when the column of matrix 1 must be have equal to the row of matrix 2.
  *
- * @return pointer of the matrix .
+ * * @return reference of the matrix.
  */
 Matrix &Matrix::operator*=(const Matrix &other) {
     if (this->col != other.row) {
@@ -262,7 +262,7 @@ Matrix &Matrix::operator*=(const Matrix &other) {
  *
  *In this method we implement the operator ++matrix
  * the matrix increasing each value by 1 .
- * @return pointer to matrix.
+ * * @return reference of the matrix.
  */
 Matrix &Matrix::operator++() {
     for (size_t i = 0; i < this->row; ++i) {
@@ -279,7 +279,7 @@ Matrix &Matrix::operator++() {
  *
  *In this method we implement the operator --matrix
  * the matrix decreasing each value by 1 .
- * @return pointer to matrix.
+ * @return reference of the matrix.
  */
 Matrix &Matrix::operator--() {
     for (size_t i = 0; i < this->row; ++i) {
