@@ -49,8 +49,8 @@ namespace zich {
         Matrix& operator--();
 
         //Unary
-        Matrix operator-() const;
-        Matrix operator+() const;
+        Matrix operator-() ;
+        Matrix operator+() ;
 
         //boolean operators
         friend bool operator>(const Matrix &matrix1,const Matrix &matrix2);

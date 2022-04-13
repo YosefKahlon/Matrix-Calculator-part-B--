@@ -320,12 +320,13 @@ Matrix Matrix::operator--(int dummy) {
 
 ///**------------------operators(unary + , -)---------------------------*/
 
-Matrix Matrix::operator-() const {
+//
+Matrix Matrix::operator-() {
     return -1 * *(this);
 }
 
 
-Matrix Matrix::operator+() const {
+Matrix Matrix::operator+()  {
     return *this;
 }
 
@@ -538,6 +539,9 @@ istream &zich::operator>>(istream &os, Matrix &matrix1) {
     matrix1.row = counter_row;
     vector<vector<double>> new_matrix;
     vector<double> vec;
+
+
+
     for (char i: save) {
         string str;
         str = i;
